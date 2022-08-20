@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>
+        Homepage Blog
+    </title>   
+</head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li class="homepage-link"><a href="Homepage.html">Home</a></li>
+                        <li class="center-nav">Fun Coding Blog</li>
+                        <li class="right-nav"><a href="Blogpage.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <ul>                 
+                    <a class="sidebar-link" href="Blogpage.html"><li >Article</li></a>
+                    <a class="sidebar-link" href="#" target="_blank"><li>Subscribe</li></a>
+                    <button class="button" id="follow"><li>Follow</li></button>
+                </ul>
+            </div>
+            <div class="card">
+                <a href="Blogpage.html">
+                <card class="flex-container">
+                    <img class="img-container border" src="https://i.ibb.co/Lz4ktZ2/rsz-1pexels-nimit-kansagra-4509131.jpg" alt="Html coding screen">
+                    <div class= "text-container">
+                        <h4>
+                            Starting to Code!
+                        </h4>
+                        <p>
+                            The beginner's guide to coding. This blog is aimed at helping beginners learn the fundamentals of coding. If you are a beginner searching for fun way to start coding, this is the place for you.
+                            <br> 
+                            <em>Click this article to read more.</em>
+                        </p>
+                    </div>
+                </a>
+                </card>
+            </div>
+            <footer class="footer">
+                <p>Copyright © 2022</p>
+            </footer>
+        </div>
+        <script>
+            const btn = document.getElementById('follow');
+            btn.addEventListener('click', function followMe(){
+                btn.innerHTML = 'Following';
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+@media (min-width: 600px) and (max-width: 900px) {
+  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 100px) repeat(3, 1fr);
+        grid-template-rows: 100px repeat(3, 200px) 50px;
+        grid-template-areas: "navbar navbar navbar navbar navbar"
+                            "sidebar sidebar content content content"
+                            "sidebar sidebar content content content"
+                            "sidebar sidebar content content content"
+                            "footer footer footer footer footer";
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .footer {
+        border-top: 1px solid rgb(211,211,211);
+        text-align: center;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .sidebar {
+        border-right: 1px solid rgb(211,211,211);
+    }
+
+    .social-links {
+        margin-top: 1.5rem;
+    }
+
+    .text-container {
+        font-size: 1.2rem;
+    }
+
+    .center {
+        width: 50%;
+    }
+}
+
+

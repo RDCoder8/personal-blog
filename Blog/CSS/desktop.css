@@ -1,0 +1,40 @@
+@media (min-width: 901px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 80px) repeat(3, 1fr);
+        grid-template-rows: 100px repeat(3, 300px) 50px;
+        grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar"
+                            "sidebar sidebar sidebar content content content content"
+                            "sidebar sidebar sidebar content content content content"
+                            "sidebar sidebar sidebar content content content content"
+                            "footer footer footer footer footer footer footer";
+    }
+
+    .homepage-link, .center-nav, .right-nav {
+        font-size: 2.5em;
+    }
+
+    .button {
+        width: 100%;
+    }
+    .footer {
+        border-top: 1px solid rgb(211,211,211);
+        text-align: center;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .text-container {
+        font-size: 1.5em;
+    }
+
+    .sidebar {
+        border-right: 1px solid rgb(211,211,211);
+    }
+
+    .center {
+        width: 30%;
+    }
+}
